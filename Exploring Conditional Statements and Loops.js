@@ -17,7 +17,7 @@ if (!isLoggedIn) {
 } else {
   // Task 2: Display products and add to cart
   for (let i = 0; i < products.length; i++) {
-    console.log(`Product Name: ${products[i].name}, Price: ${products[i].price}`);
+    console.log(`Product Name: ${products[i].name}, Price: $${products[i].price}`);
     // Add product to cart
     cart.push(products[i]);
   }
@@ -28,5 +28,5 @@ if (!isLoggedIn) {
     totalCost += cart[i].price;
   }
 
-  console.log(`Total cost of items in the cart: ${totalCost}`);
+  console.log(`Total cost of items in the cart: $${totalCost}`);
 }
